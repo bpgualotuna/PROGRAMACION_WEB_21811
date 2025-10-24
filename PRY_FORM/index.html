@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRODUCCION A LOS FORMULARIOS</title>
+</head>
+<body>
+    <header>
+        <h1>FORMULARIO PARA INGRESAR DATOS DE UNA PERSONA</h1>
+    </header>
+    <main>
+        <!-- FORM -->
+        <form action="server.html" method="get">
+            <!-- TEXT -->
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" name="apellidos" id="apellidos" placeholder="Ejemplo:Gualotuña">
+            
+            <!-- NOMBRES -->
+            <label for="nombre">Nombres:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ejemplo:Brayan" maxlength="5" minlength="2">
+            <!-- EDAD -->
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad" placeholder="Edad">
+            <!-- EMAIL -->
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="ejemplo@correo.com">
+            <!-- DATE -->
+            <label for="fecha">INGRESE SU FECHA DE NACIMIENTO</label>
+            <input type="date" name="fecha de nacimiento" id="fecha" placeholder="20/10/2000" >
+            <!-- RADIO -->
+            <label>Seleccione su sexo:</label>
+            <label for="Hombre">Hombre</label>
+            <input type="radio" name="sexo" id="hombre" value="HOMBRE">
+            <label for="mujer">Mujer</label>
+            <input type="radio" name="sexo" id="mujer" value="MUJER">
+
+            <!-- CHECKBOX -->
+            <label for="">SELECIONE SUS DIAS DE CLASE DE PROGRAMACION WEB</label>
+            <label for="lunes">lUNES</label>
+            <input type="checkbox" name="dias[]" id="lunes">
+            <label for="martes">MARTES</label>
+            <input type="checkbox" name="dias[]" id="martes">
+            <label for="miercoles">MIERCOLES</label>
+            <input type="checkbox" name="dias[]" id="miercoles">
+            <label for="jueves">JUEVES</label>
+            <input type="checkbox" name="dias[]" id="jueves">
+            <label for="viernes">VIERNES</label>
+            <input type="checkbox" name="dias[]" id="viernes">
+            <!-- FILE -->
+            <label for="foto">SUBA SU FOTO DE PERFIL</label>
+            <input type="file" name="foto" id="foto" accept=".pdf">
+            <!-- COLOR -->
+            <label for="color">SELECCIONE UN COLOR</label>
+            <input type="color" name="color" id="color">
+            <!-- RANGUE -->
+            <label for="estatura">ESTATURA</label>
+            <input type="range" name="estatura" id="estatura" min="10" max="230">
+
+            <!-- SEARCH -->
+            <label for="cedula">BUSCA POR CEDULA</label>
+            <input type="search" name="cedula" id="cedula">
+
+
+            <!-- RESET -->
+            <label for="vaciar">VACIAR FORMULARIO</label>
+            <input type="reset" name="vaciar" id="vaciar">
+
+            <!-- SUBMIT -->
+            <label for="sub">SUBMIT</label>
+            <input type="submit" name="sub" id="sub">
+            <!-- PASSWORD -->
+            <label for="PASSWORD">PASSWORD</label>
+            <input type="password" name="password" id="PASSWORD" >
+
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
