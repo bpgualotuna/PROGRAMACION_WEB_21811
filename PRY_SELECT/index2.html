@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+
+<body>
+    <header>
+        <h1>REGISTRO ESTUDIANTES</h1>
+    </header>
+    <main>
+        <form action="server.html">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th rowspan="3">
+                            Logo
+                        </th>
+                        <th colspan="3">
+                            Registro
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="4">Registro Estudiante</th>
+                    </tr>
+                    <tr>
+                        <th colspan="4">
+                            Universidad de las Fuerzas Armadas
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="4">
+                            <ul>
+                                <li>INFORMACION BÁSICA</li>
+                            </ul>
+                            </th>
+                    </tr>
+                    <tr>
+                        <td><label for="primerNombre">Primer nombre: </label></td>
+                        <td><input type="text" name="primerNombre" id="primerNombre" placeholder="Brayan" required></td>
+                        <td><label for="segundoNombre">Segundo nombre:</label></td>
+                        <td><input type="text" name="segundoNombre" id="segundoNombre" placeholder="Patricio" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="primerApellido">Primer apellido:</label></td>
+                        <td><input type="text" name="primerApellido" id="primerApellido" placeholder="Gualotuña"
+                                required>
+                        </td>
+                        <td><label for="segundoApellido">Segundo apellido:</label></td>
+                        <td><input type="text" name="segundoApellido" id="segundoApellido" placeholder="Amaguaya"
+                                required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cedula</td>
+                        <td colspan="">
+                            <input type="number" name="cedula" id="cedula" pattern="[0-9]{10}" minlength="10"
+                                maxlength="10" required>
+                        </td>
+                        <td>Hoja de vida</td>
+                        <td>
+                            <input type="file" accept=".pdf">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="fechaNacimiento">Fecha de nacimiento:</label></td>
+                        <td><input type="date" name="fechaNacimiento" id="fechaNacimiento" value="2000-03-26"
+                                min="2005-10-27" max="2010-10-27" required></td>
+                        <td><label for="edad">Edad:</label></td>
+                        <td><input type="number" name="edad" id="edad" placeholder="25" min="18" max="80" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="sexo">Sexo:</label></td>
+                        <td><input type="radio" name="sexo" id="masculino"><label for="masculino">Masculino</label></td>
+                        <td><input type="radio" name="sexo" id="femenino"><label for="femenino">Femenino</label></td>
+                        <td><input type="radio" name="sexo" id="otro"><label for="otro">Otro</label></td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <ul>
+                                <li>Materias </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="depar">Departamento: </label></td>
+                        <td>
+                            <select name="depar" id="departamento" required>
+                                <option value="DCC">Ciencias en Computacion</option>
+                                <option value="DCM">Ciencias Medicas</option>
+                                <option value="DIM">Mecatronica</option>
+                                <option value="DIE">Electrica</option>
+                                <option value="DCE">Ciencias Exactas</option>
+                            </select>
+                        </td>
+                        <td><label for="materia">Materias: </label></td>
+                        <td>
+                            <select name="materia" id="materia" required multiple>
+                                <option value="DCC">POO</option>
+                                <option value="DCM">Estructura de Datos</option>
+                                <option value="DIM">Usabilidad</option>
+                                <option value="DIE">Bases de datos</option>
+                                <option value="DCE">Digital</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="ID">ID:</label>
+
+                        </td>
+                        <td>
+                            <input type="text" pattern="[A-Z]{3}[0-9]{5}" placeholder="LMU12345">
+                        </td>
+                        <td colspan="2">
+                            <input type="submit">
+                        </td>
+                    </tr>
+
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </table>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>SELEC EN FORMULARIO</h1>
+
+    </header>
+    <main>
+        <form action="server.html" method="get">
+            <!-- select para form -->
+            <fieldset>
+                <label for="lenguaje de programacion">SELECCIONE SU LENGUAJE DE PROGRAMACION FAVORITO</label>
+                <select name="Lenguaje_programacion" id="lenguaje de programacion">
+                    <option value="c_mas_mas">C++</option>
+                    <option value="Java">JAVA</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Python">PYTHON</option>
+                    <option value="HTML" disabled>HTML</option>
+                </select>   
+            </fieldset>
+            <br>
+            <label for="musica_favorita">SELECIONE SU MUSICA FAVORITA</label>
+            <select name="musica_favorita" id="musica_favorita" multiple required autofocus>
+                <optgroup contextmenu="Regueton" label="Regueton">
+                    <option value="loba">SHAKIRA LOBA</option>
+                    <option value="anoche">ANOCHE BB</option>
+                    <option value="all_of_me" selected>ALL OF ME JHON LEJON</option>
+                    <option value="triste">TRISTE JOSE JOSE</option>
+                </optgroup>
+                <optgroup contextmenu="Regueton" label="Regueton">
+                    <option value="loba">SHAKIRA LOBA</option>
+                    <option value="anoche">ANOCHE BB</option>
+                    <option value="all_of_me" selected>ALL OF ME JHON LEJON</option>
+                    <option value="triste">TRISTE JOSE JOSE</option>
+                </optgroup>
+            </select>
+            <br>
+            <!-- TEXT AREA -->
+            <label for="frase_motivadora">INGRESE SU FRASE DEL DIA DE HOY</label>
+            <textarea name="frase_motivadora" id="frase_motivadora" cols="30" rows="10">WENOS DIAS A TODOS</textarea>
+            <button type="submit">ENVIAR</button>
+
+            <!-- HIDDEN -->
+            <input type="hidden" name="cedula_usuario" id="" value="0978690326">
+
+
+
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
