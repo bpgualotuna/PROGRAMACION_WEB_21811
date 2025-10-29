@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INTRODUCCION A LOS FORMULARIOS</title>
 </head>
+
 <body>
     <header>
         <h1>FORMULARIO PARA INGRESAR DATOS DE UNA PERSONA</h1>
@@ -15,7 +17,7 @@
             <!-- TEXT -->
             <label for="apellidos">Apellidos:</label>
             <input type="text" name="apellidos" id="apellidos" placeholder="Ejemplo:Gualotuña">
-            
+
             <!-- NOMBRES -->
             <label for="nombre">Nombres:</label>
             <input type="text" name="nombre" id="nombre" placeholder="Ejemplo:Brayan" maxlength="5" minlength="2">
@@ -27,7 +29,7 @@
             <input type="email" name="email" id="email" placeholder="ejemplo@correo.com">
             <!-- DATE -->
             <label for="fecha">INGRESE SU FECHA DE NACIMIENTO</label>
-            <input type="date" name="fecha de nacimiento" id="fecha" placeholder="20/10/2000" >
+            <input type="date" name="fecha de nacimiento" id="fecha" placeholder="20/10/2000">
             <!-- RADIO -->
             <label>Seleccione su sexo:</label>
             <label for="Hombre">Hombre</label>
@@ -36,17 +38,17 @@
             <input type="radio" name="sexo" id="mujer" value="MUJER">
 
             <!-- CHECKBOX -->
-            <label for="">SELECIONE SUS DIAS DE CLASE DE PROGRAMACION WEB</label>
-            <label for="lunes">lUNES</label>
-            <input type="checkbox" name="dias[]" id="lunes">
+            <label>SELECCIONE SUS DÍAS DE CLASE DE PROGRAMACION WEB (máximo 3 - por favor respete el límite)</label>
+            <label for="lunes">LUNES</label>
+            <input type="checkbox" name="dias[]" id="lunes" value="LUNES">
             <label for="martes">MARTES</label>
-            <input type="checkbox" name="dias[]" id="martes">
+            <input type="checkbox" name="dias[]" id="martes" value="MARTES">
             <label for="miercoles">MIERCOLES</label>
-            <input type="checkbox" name="dias[]" id="miercoles">
+            <input type="checkbox" name="dias[]" id="miercoles" value="MIERCOLES">
             <label for="jueves">JUEVES</label>
-            <input type="checkbox" name="dias[]" id="jueves">
+            <input type="checkbox" name="dias[]" id="jueves" value="JUEVES">
             <label for="viernes">VIERNES</label>
-            <input type="checkbox" name="dias[]" id="viernes">
+            <input type="checkbox" name="dias[]" id="viernes" value="VIERNES">
             <!-- FILE -->
             <label for="foto">SUBA SU FOTO DE PERFIL</label>
             <input type="file" name="foto" id="foto" accept=".pdf">
@@ -71,7 +73,7 @@
             <input type="submit" name="sub" id="sub">
             <!-- PASSWORD -->
             <label for="PASSWORD">PASSWORD</label>
-            <input type="password" name="password" id="PASSWORD" >
+            <input type="password" name="password" id="PASSWORD">
 
         </form>
     </main>
@@ -79,4 +81,5 @@
 
     </footer>
 </body>
+
 </html>

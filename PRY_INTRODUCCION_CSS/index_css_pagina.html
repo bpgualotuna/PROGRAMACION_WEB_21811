@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS en Pagina</title>
+    <style>
+        *{
+            color: blue;
+            
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        
+        h1{
+            color: red;
+            font-size: 12px;
+        }
+        p{
+            color: black;
+            font-weight: bold;
+            font-size: 10px;
+        }
+        button{
+            background-color: aqua;
+            border-radius: 10px;
+        }
+        .boton-personalizado{
+            background-color: chartreuse;
+            border-radius: 5px;
+            width: 100%;
+        }
+        #boton-unico{
+            background-color: darkgoldenrod;
+            width: 50%;
+            
+
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HOLA MUNDO</h1>
+    <p>Como estan</p>
+    <hr>
+    <button class="boton-personalizado">BOTON 1</button>
+    <button class="boton-personalizado">BOTON 2</button>
+    <button  id="boton-unico">BOTON 3</button>
+</body>
+</html>
