@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Componentes Bootstrap 5.0</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1 class="text-center my-4">Componentes Bootstrap 5.0</h1>
+        
+        <!-- Accordion -->
+        <section class="mb-5">
+            <h2>Accordion</h2>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            Accordion Item #1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Este es el contenido del primer elemento del accordion.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            Accordion Item #2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Este es el contenido del segundo elemento del accordion.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alerts -->
+        <section class="mb-5">
+            <h2>Alerts</h2>
+            <div class="alert alert-primary" role="alert">
+                Una alerta primaria simple
+            </div>
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <strong>¡Éxito!</strong> Esta es una alerta de éxito con botón de cierre.
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+            <div class="alert alert-warning" role="alert">
+                Una alerta de advertencia
+            </div>
+        </section>
+
+        <!-- Badge -->
+        <section class="mb-5">
+            <h2>Badge</h2>
+            <h3>Ejemplo <span class="badge bg-secondary">Nuevo</span></h3>
+            <button type="button" class="btn btn-primary">
+                Notificaciones <span class="badge bg-secondary">4</span>
+            </button>
+            <span class="badge bg-primary">Primario</span>
+            <span class="badge bg-success">Éxito</span>
+            <span class="badge bg-danger">Peligro</span>
+        </section>
+
+        <!-- Breadcrumb -->
+        <section class="mb-5">
+            <h2>Breadcrumb</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+                    <li class="breadcrumb-item"><a href="#">Biblioteca</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Datos</li>
+                </ol>
+            </nav>
+        </section>
+
+        <!-- Buttons -->
+        <section class="mb-5">
+            <h2>Buttons</h2>
+            <button type="button" class="btn btn-primary">Primario</button>
+            <button type="button" class="btn btn-secondary">Secundario</button>
+            <button type="button" class="btn btn-success">Éxito</button>
+            <button type="button" class="btn btn-danger">Peligro</button>
+            <button type="button" class="btn btn-warning">Advertencia</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-outline-primary">Outline</button>
+        </section>
+
+        <!-- Button group -->
+        <section class="mb-5">
+            <h2>Button Group</h2>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-primary">Izquierda</button>
+                <button type="button" class="btn btn-primary">Centro</button>
+                <button type="button" class="btn btn-primary">Derecha</button>
+            </div>
+        </section>
+
+        <!-- Card -->
+        <section class="mb-5">
+            <h2>Card</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            Encabezado de la tarjeta
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Título de la tarjeta</h5>
+                            <p class="card-text">Contenido de ejemplo para la tarjeta.</p>
+                            <a href="#" class="btn btn-primary">Ir a algún lugar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carousel -->
+        <section class="mb-5">
+            <h2>Carousel</h2>
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-block w-100 bg-primary text-white text-center p-5">
+                            <h3>Primera diapositiva</h3>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-block w-100 bg-secondary text-white text-center p-5">
+                            <h3>Segunda diapositiva</h3>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Close button -->
+        <section class="mb-5">
+            <h2>Close Button</h2>
+            <button type="button" class="btn-close"></button>
+            <button type="button" class="btn-close" disabled></button>
+        </section>
+
+        <!-- Collapse -->
+        <section class="mb-5">
+            <h2>Collapse</h2>
+            <p>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample">
+                    Botón con data-bs-target
+                </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    Contenido colapsable. Este contenido se puede mostrar u ocultar.
+                </div>
+            </div>
+        </section>
+
+        <!-- Dropdowns -->
+        <section class="mb-5">
+            <h2>Dropdowns</h2>
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Acción</a></li>
+                    <li><a class="dropdown-item" href="#">Otra acción</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Algo más aquí</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- List group -->
+        <section class="mb-5">
+            <h2>List Group</h2>
+            <ul class="list-group">
+                <li class="list-group-item">Un elemento</li>
+                <li class="list-group-item active">Un segundo elemento activo</li>
+                <li class="list-group-item">Un tercer elemento</li>
+                <li class="list-group-item">Un cuarto elemento</li>
+            </ul>
+        </section>
+
+        <!-- Modal -->
+        <section class="mb-5">
+            <h2>Modal</h2>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Abrir modal
+            </button>
+            <div class="modal fade" id="exampleModal" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Título del modal</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            Contenido del modal aquí.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="btn btn-primary">Guardar cambios</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navs & tabs -->
+        <section class="mb-5">
+            <h2>Navs & Tabs</h2>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button">Inicio</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button">Perfil</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel">
+                    <p class="mt-3">Contenido de la pestaña Inicio.</p>
+                </div>
+                <div class="tab-pane fade" id="profile" role="tabpanel">
+                    <p class="mt-3">Contenido de la pestaña Perfil.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navbar -->
+        <section class="mb-5">
+            <h2>Navbar</h2>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Características</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <!-- Offcanvas -->
+        <section class="mb-5">
+            <h2>Offcanvas</h2>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample">
+                Abrir offcanvas
+            </button>
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    Contenido del offcanvas aquí.
+                </div>
+            </div>
+        </section>
+
+        <!-- Pagination -->
+        <section class="mb-5">
+            <h2>Pagination</h2>
+            <nav>
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <!-- Popovers -->
+        <section class="mb-5">
+            <h2>Popovers</h2>
+            <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" title="Título del popover" data-bs-content="Contenido del popover aquí.">
+                Click para popover
+            </button>
+        </section>
+
+        <!-- Progress -->
+        <section class="mb-5">
+            <h2>Progress</h2>
+            <div class="progress mb-3">
+                <div class="progress-bar" role="progressbar" style="width: 25%">25%</div>
+            </div>
+            <div class="progress mb-3">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 50%">50%</div>
+            </div>
+            <div class="progress">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 75%">75%</div>
+            </div>
+        </section>
+
+        <!-- Scrollspy -->
+        <section class="mb-5">
+            <h2>Scrollspy</h2>
+            <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading1">Primer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyHeading2">Segundo</a>
+                    </li>
+                </ul>
+            </nav>
+            <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0" style="height: 200px; overflow-y: auto;">
+                <h4 id="scrollspyHeading1">Primer encabezado</h4>
+                <p>Este es contenido para el primer encabezado.</p>
+                <h4 id="scrollspyHeading2">Segundo encabezado</h4>
+                <p>Este es contenido para el segundo encabezado.</p>
+            </div>
+        </section>
+
+        <!-- Spinners -->
+        <section class="mb-5">
+            <h2>Spinners</h2>
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Cargando...</span>
+            </div>
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Cargando...</span>
+            </div>
+            <div class="spinner-grow text-success" role="status">
+                <span class="visually-hidden">Cargando...</span>
+            </div>
+        </section>
+
+    </div>
+
+    
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
